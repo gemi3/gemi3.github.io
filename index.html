@@ -1,7 +1,43 @@
 <html>
-    <head></head>
+    <head><style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          font-size: 30px;
+          text-align: center;
+        }
+        
+        .flex-item-left {
+          background-color: #f1f1f1;
+          padding: 10px;
+          flex: 50%;
+        }
+        
+        .flex-item-right {
+          background-color: dodgerblue;
+          padding: 10px;
+          flex: 50%;
+        }
+        
+        /* Responsive layout - makes a one column-layout instead of two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
+        </style></head>
     <body>
         <p>Hello, World!</p>
         <p>My name is Genesse</p> <!-- Change NAME to your name! -->
-    </body>
+
+
+        <div class="flex-container">
+            
+            <img src="part1zo.gif" >
+        </div>
+</body>
 </html>
