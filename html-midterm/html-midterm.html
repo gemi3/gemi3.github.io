@@ -1,14 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    
-    <html language="en">
-    
     <title>Error-Filled Page</title>
-    
+</head>
 <body>
-    <h1>Welcome to My Error-Filled Page
+    <h1>Welcome to My Error-Filled Page</h1>
     
-    This is a paragraph with mismatched tags and missing closing tags.</p>
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
     
     <ol>
         <li>Item 1</li>
@@ -21,13 +19,13 @@
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ul>
+    </ol>
 
-    <p>This is another paragraph without proper indentation.
+    <p>This is another paragraph without proper indentation.</p>
     
-    <img src="image.jpg">
+    <img src="image.jpg" alt="programmer meme">
 
-    <a href="https://www.example.com" target="_blank">Click me!</img>
+    <a href="https://www.example.com" target="_blank">Click me!</a>
 
     <table>
         <tr>
@@ -42,24 +40,50 @@
             <td>Jane</td>
             <td>30</td>
         </tr>
-    
-    <img source="error.jpeg" alt="Error Image">
+    </table>
+    <img src="error.jpeg" alt="Error Image">
 
-    <center>This is centered text.</center>
+    <p style="text-align:center;">This is centered text.</p>
 
-    <p bgcolor="lightgray">Text</p>
+    <p style="background-color:lightgray;">Text</p>
 
-    <input type="button" value="Click me">
+    <button type="button">Click Me!</button>
 
-    <!-- This is an unclosed comment
+    <!-- This is an unclosed comment -->
 
-    <a href="#">Link without closing tag
+    <a href="#">Link without closing tag</a>
 
-    <p><em>Underlined text</p></em>
+    <p><u>Underlined text</u></p>
 
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt>
+            <dd>Descriptive Item Text</dd>
     </dl>
+
+    <ol>
+        <li> missing Doctype in HTML - Added !DOCTYPE to html </li>
+        <li> html language in wrong place - moved above head under !DOCTYPE</li>
+        <li> head missing closing tag - added closing tag</li>
+        <li> title in wrong place - moved to head tag </li>
+        <li> h1 tag incomplete - added end tag</li>
+        <li> paragraph missing opening tag - added opening tag</li>
+        <li> mismatched ordered list tags - changed both to ol </li>
+        <li> missing closing tag for paragraph - added closing tag</li>
+        <li> missing alt text in img - added alt</li>
+        <li> missing closing table tag - added end tag</li>
+        <li> wrote source instead of src - changed to src</li>
+        <li> there is no center tag in html5 - added css in opening tag</li>
+        <li> background color not defined as style and also there is no bgcolor - changed to style="background-color:lightgrey;"</li>
+        <li> there is nothing being inputted - changed the button to just a button that does nothing</li>
+        <li> missing the closing tag for button - added closing tag</li>
+        <li> text is not a value - moved text inbetween tags</li>
+        <li> closing comment tag missing - added closing tag</li>
+        <li> missing link closing tag - added closing tag</li>
+        <li> paragraph tags in wrong place - moved to outside of italics tag</li>
+        <li> italics tag instead of underlined - changed to u</li>
+        <li> descriptive list wrong - changed from li to dt</li>
+        <li> descriptive item text wrong - changed from li to dd</li>
+    <ol>
+        
 </body>
 </html>
