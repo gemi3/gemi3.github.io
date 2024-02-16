@@ -67,21 +67,8 @@ article {
     border-radius: 1.5em;
   }
 
-  /* Selectors to be matched up with rulesets */
-  
-/*  
-  
-  
-  
-  
-  /* Rulesets to be matched up with selectors 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  */
+#kirbycard {
+    background-color: #E791BF;
+    font-family: cursive;
+
+}
