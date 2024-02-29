@@ -1,0 +1,19 @@
+body{
+    background: url(newsweather.jpeg) no-repeat;
+    background-size:cover;
+}
+
+.firstdiv{
+    width: 50%;
+    height: 70%;
+    background-color: #ffffff;
+    padding: .5%;
+
+    h1{
+        text-align: center;
+        color:red;
+        text-shadow: 1px 1px 1px blue;
+        font-size: 40px;
+    }
+    
+}
