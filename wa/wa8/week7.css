@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#E6EBE0;
+}
+
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: #107E7D;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color: #E6EBE0;
+}
+#backbox{
+    background-image: linear-gradient(to bottom right, #ffcccc,#E6EBE0, #F4F1BB);
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align:center;
+    width: 75%;
+    height: 300%;
+}
+
+#newbox{
+    background-size:cover;
+    background-color:rgba(230, 235, 224, 1);
+    text-align: center;
+
+    transition: background-color 2s ease;
+}
+#newbox:hover{
+    background-color: rgba(230, 235, 224, 0);
+}
+
+h1{
+    color: #95190C;
+}
+
+
+img{
+    width:30vw;
+}
+
+
+#red-ball{
+    background-color: #F4F1BB;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #070600;
+    outline-offset: .25px;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-name: ballanim;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ballanim{
+    from{
+        margin:0;
+    }
+    20%{
+        margin-left:0%;
+        margin-top: 50%;
+    }
+    40%{
+        margin-left: 100%;
+        margin-top:25%;
+    }
+    60%{
+        margin-left:50%;
+        margin-top:0%;
+    }
+    80%{
+        margin-left:25%;
+        margin-top:100%;
+    }
+    to{
+        margin: 0;
+    }
+}
+
