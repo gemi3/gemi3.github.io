@@ -34,10 +34,27 @@ bold
 font-family: museomoderno, sans-serif;
 font-weight: 700;
 font-style: normal;
+
+light
+font-family: fira-code, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+regular
+font-family: "fira-code", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+bold
+font-family: "fira-code", sans-serif;
+font-weight: 700;
+font-style: normal;
 */
 body{
     padding:1%;
-
+    font-family: "fira-code", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 h1{
@@ -46,8 +63,42 @@ h1{
     font-style: normal; 
 }
 
+#bio{
+    display:flexbox;
+    padding: 1%;
+    border-radius: 0px 25px 0px 25px;
+    background-color: green;
+    color:beige;
+    margin-bottom: 10px;
+}
+
 #EventBox{
     display:grid;
-    background-color: red;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    background-color: beige;
     padding: 1%;
+    border-radius: 25px;
+    gap: 10px;
+    text-align:left;
+}
+
+#Event{
+    background-color:white;
+    padding: 2%;
+    border-radius: 10px;
+    transform: rotate(0deg);
+    transition: background-color 1s, border-radius 1s, transform 1s;
+    h2{
+        font-family: museomoderno, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+}
+
+#Event:hover{
+    background-color:aquamarine;
+    border-radius: 50px;
+    transform: rotate(1deg);
 }
