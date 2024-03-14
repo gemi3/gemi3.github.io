@@ -1,0 +1,53 @@
+/*
+h1 for Col.Symph 
+p for col.symph bio
+h2 titles of performance
+flexbox divs for seperate performances
+p for dates
+p for featured artists
+p for repertoire whatever tf that is
+
+constraints:
+two screen size layout  -   media query for if screen then this blah blah blah
+3 colors plus black and white
+careful pictures
+geometric shapes
+NOT based on col.symph colors
+
+features:
+ease in flexboxes as you scroll
+colorful dates formatted in Title ---- Date/time
+mess with opacity maybe?
+
+fonts:
+regular
+font-family: museomoderno, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+italic
+font-family: museomoderno, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+bold
+font-family: museomoderno, sans-serif;
+font-weight: 700;
+font-style: normal;
+*/
+body{
+    padding:1%;
+
+}
+
+h1{
+    font-family: museomoderno, sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+#EventBox{
+    display:grid;
+    background-color: red;
+    padding: 1%;
+}
