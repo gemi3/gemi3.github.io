@@ -35,60 +35,73 @@ font-family: museomoderno, sans-serif;
 font-weight: 700;
 font-style: normal;
 
-light
-font-family: fira-code, sans-serif;
-font-weight: 300;
-font-style: normal;
-
-regular
-font-family: "fira-code", sans-serif;
-font-weight: 400;
-font-style: normal;
-
-bold
-font-family: "fira-code", sans-serif;
-font-weight: 700;
-font-style: normal;
 */
 body{
     padding:1%;
-    font-family: "fira-code", sans-serif;
-    font-weight: 300;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
     font-style: normal;
+    background-color:#03313e;
 }
 
 h1{
     font-family: museomoderno, sans-serif;
     font-weight: 700;
     font-style: normal; 
+    color:#fbf4cb;
 }
 
 #bio{
     display:flexbox;
     padding: 1%;
     border-radius: 0px 25px 0px 25px;
-    background-color: green;
-    color:beige;
+    background-color:#cebd64;
+    color: black;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #EventBox{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    background-color: beige;
+    background-color:#405e64;
     padding: 1%;
     border-radius: 25px;
     gap: 10px;
     text-align:left;
 }
 
+@media(max-width:400px){
+    #EventBox{
+        grid-template-columns:100%;
+    }
+    #Event{
+        animation:fadeIn 3s;
+    }
+    @keyframes fadeIn {
+        0%{opacity: 0%; rotate: 1deg;}
+        100%{opacity: 100%;}
+    }
+    #dance1{
+        width: 10%;
+    }
+    #dance2{
+        width: 10%;
+    }
+    h1{
+        text-align: center;
+    }
+    
+}
+
 #Event{
-    background-color:white;
+    background-color:#fbf4cb;
     padding: 2%;
     border-radius: 10px;
     transform: rotate(0deg);
-    transition: background-color 1s, border-radius 1s, transform 1s;
+    color:black;
+    transition: background-color 1s, border-radius 1s, transform 1s, color .5s;
     h2{
         font-family: museomoderno, sans-serif;
         font-weight: 700;
@@ -98,7 +111,34 @@ h1{
 }
 
 #Event:hover{
-    background-color:aquamarine;
+    background-color:#b25e59;
+    color:#fbf4cb;
     border-radius: 50px;
     transform: rotate(1deg);
 }
+
+#dance1{
+    animation: dance1 2s infinite;
+    margin-left: 10px;
+}
+
+@keyframes dance1{
+    0%{rotate:15deg;}
+    50%{rotate:-15deg;}
+    100%{rotate:15deg;}
+}
+
+#dance2{
+    animation: dance2 2s infinite;
+    margin-left: 10px;
+}
+
+@keyframes dance2{
+    0%{rotate:-15deg;}
+    50%{rotate:15deg;}
+    100%{rotate:-15deg;}
+}
+
+
+
+
