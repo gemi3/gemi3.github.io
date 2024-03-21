@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bodyo" style="font-size:x-large;">
+    
+    <button id="bigger">+ </button> 
+    <button id="smaller">- </button>
+    <button id="red"> red?? </button>
+    <button id="blue"> blue?? </button>
+    <p id="textbos"> bigger or smaller? </p> 
+
+    
+<script>
+    document.getElementById("bigger").addEventListener("click",biggerb);
+
+    function biggerb() {
+        document.getElementById("textbos").style.fontSize = "larger";
+    }
+
+    document.getElementById("smaller").addEventListener("click",smallerb);
+
+    function smallerb() {
+        document.getElementById("textbos").style.fontSize = "smaller";
+    }
+
+    document.getElementById("red").addEventListener("mouseover", redback);
+    document.getElementById("red").addEventListener("mouseout", regularback);
+
+    function redback(){
+        document.getElementById("bodyo").style.backgroundColor = "red";
+    }
+    
+    document.getElementById("blue").addEventListener("mouseover", blueback);
+    document.getElementById("blue").addEventListener("mouseout", regularback);
+
+    function blueback(){
+        document.getElementById("bodyo").style.backgroundColor = "blue";
+    }
+
+    function regularback(){
+        document.getElementById("bodyo").style.backgroundColor = "white";
+    }
+</script>
+</body>
+</html>
